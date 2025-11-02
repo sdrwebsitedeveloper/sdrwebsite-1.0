@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선뚜리</title>
+    <link rel="icon" href="/assets/images/머리.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="navigationButtons">
+        <a href='#dashboard'>
+            <img class="menu_logo" src="/assets/images/머리.png">
+        </a>
+        <button class="menu-toggle">☰</button>
+
+        <!-- 토글할 모든 항목들을 포함하는 컨테이너 -->
+        <div id="navContainer" class="menu-items">
+            <!-- 네비게이션 항목들 -->
+            <div id="navItems">
+                <button onclick="window.location.href='#notices'">공지사항</button>
+                <button onclick="window.location.href='#introseonduri'">선뚜리 소개</button>
+                <button onclick="window.location.href='#programs'">진행중인 프로그램</button>
+                <button onclick="window.location.href='#reviewprograms'">프로그램 후기</button>
+                <button onclick="window.location.href='#regularprograms'">정기 프로그램</button>
+                <button onclick="window.location.href='#faq'">FAQ</button>
+                <button id="adminButton" style="display:none;">FAQ 관리자</button>
+            </div>
+
+            <!-- 로그인/로그아웃 버튼들 -->
+            <div id="authButtons">
+                <button id="loginButton">로그인/회원가입</button>
+                <button id="logoutButton" style="display:none;">로그아웃</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="app" class="content">
+        <!-- 동적으로 페이지 콘텐츠가 여기에 로드됩니다. -->
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'HS산토끼체'; /* 원하는 폰트 이름으로 지정 */
+    src: url('assets/fonts/HSSanTokki2.0(2024).ttf') format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'KoPubDotum Medium'; 
+    src: url('assets/fonts/KoPubWorld Dotum Medium.ttf') format('truetype');
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+.body_blue{
+    background-color: #77DEEF;
+    overflow: hidden;
+}
+
+.blue-overlap2{
+    position: relative; /* 부모 요소에 상대 위치 설정 */
+    margin-top: -100px; /* 겹치게 하려면 마진을 음수로 설정 */
+    padding-top: 260px; /* 기존 패딩 유지 */
+    padding-bottom: 100px; /* 기존 패딩 유지 */
+    background-color: #77DEEF; /* 배경색 설정 */
+    z-index: 2;
+    
+}
+
+
+
+
+.info_gray{
+    background: #6F6F6F;
+    overflow: hidden;
+    height: 60px; 
+}
+
+
+/* 메뉴 바 설정*/
+
+#navigationButtons .menu_logo{
+    width: 24px;
+    display: flex;
+    vertical-align: middle;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* 전체 컨테이너 스타일 */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#navigationButtons {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 메뉴 로고 이미지 스타일 */
+.menu_logo {
+    transform: translateX(170px);
+    width: 50px; /* 로고 크기를 원하는 대로 조정 */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* 햄버거 메뉴 버튼 스타일 */
+.menu-toggle {
+    display: none; /* 기본적으로 숨김 (반응형으로 표시할 예정) */
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 메뉴 아이템 컨테이너 스타일 */
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* 네비게이션 버튼 스타일 */
+.menu-items button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #6F6F6F;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: 'KoPubDotum Medium';
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 네비게이션 버튼 hover 상태 */
+.menu-items button:hover {
+    background-color: #92e4ff;
+}
+
+/* #authButtons 스타일 */
+#authButtons {
+    display: flex;
+    gap: 0px; /* 버튼 간격 조정 */
+    width: 17%
+}
+
+/* 로그인/로그아웃 버튼 스타일 */
+#authButtons button {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* 로그인/로그아웃 버튼 hover 상태 */
+#authButtons button:hover {
+    background-color: #00BFFF;
+    color: white;
+}
+
+/* 임베드 상태에서 숨기기 */
+body[embed-mode="true"] #navigationButtons {
+    display: none;
+}
+
+
+
+/* 반응형 디자인 */
+@media screen and (max-width: 1500px) {
+    /* 네비게이션 항목 숨김 */
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    /* 햄버거 메뉴 표시 */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* 버튼 크기 조정 */
+    #navigationButtons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #navigationButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* 수평 방향으로 가운데 정렬 */
+    }
+
+    /* 가운데 정렬을 위한 flex 설정 */
+    .menu_logo {
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* 가로 방향으로 가운데 정렬 */
+        margin: 10px 0; /* 상하 여백 추가 */
+        order: -1; /* 햄버거 메뉴 버튼 위로 이동 */
+        width: auto; /* 요소 크기를 내용에 맞게 조절 */
+    }
+
+    
+
+            /* #authButtons 스타일 */
+        #authButtons {
+            display: flex;
+            gap: 10px; /* 버튼 간격 조정 */
+            width: 50%
+            
+            
+        }
+
+        /* 로그인/로그아웃 버튼 스타일 */
+        #authButtons button {
+            padding: 10px 20px;
+            background-color: #FFFFFF;
+            color: #00BFFF;
+            border: 2px solid #00BFFF;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+    /* 햄버거 메뉴 열림 상태에서 메뉴 아이템 표시 */
+    .menu-items.open {
+        display: flex;
+    }
+}

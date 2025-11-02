@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "faqs": {
+      ".read": true,
+      ".write": true,
+      
+      "$faqId": {
+        "comments": {
+          ".read": true,
+          ".write": "auth != null"
+        }
+      }
+    }
+  }
+}

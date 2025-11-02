@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "(project ID)",
+    "prod": "(project ID)"
+  },
+  "targets": {},
+  "etags": {
+    "(project ID)": {
+      "extensionInstances": {}
+    }
+  },
+  "dataconnectEmulatorConfig": {}
+}

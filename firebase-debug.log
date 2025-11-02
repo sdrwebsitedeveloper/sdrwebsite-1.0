@@ -1,0 +1,224 @@
+[debug] [2025-11-02T08:43:30.606Z] ----------------------------------------------------------------------
+[debug] [2025-11-02T08:43:30.610Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions --debug
+[debug] [2025-11-02T08:43:30.611Z] CLI Version:   13.35.1
+[debug] [2025-11-02T08:43:30.612Z] Platform:      win32
+[debug] [2025-11-02T08:43:30.612Z] Node Version:  v18.20.4
+[debug] [2025-11-02T08:43:30.627Z] Time:          Sun Nov 02 2025 17:43:30 GMT+0900 (대한민국 표준시)
+[debug] [2025-11-02T08:43:30.628Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-02T08:43:31.387Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-02T08:43:31.393Z] > authorizing via signed-in user (jw56804272@gmail.com)
+[debug] [2025-11-02T08:43:31.393Z] [iam] checking project sdrwebsitebeta-5aa7d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-11-02T08:43:31.398Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:31.399Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:31.401Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions [none]
+[debug] [2025-11-02T08:43:31.402Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions x-goog-quota-user=projects/sdrwebsitebeta-5aa7d
+[debug] [2025-11-02T08:43:31.403Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-11-02T08:43:31.869Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions 200
+[debug] [2025-11-02T08:43:31.870Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-11-02T08:43:31.872Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:31.873Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:31.874Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/serviceAccounts/sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-11-02T08:43:31.876Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/serviceAccounts/sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-11-02T08:43:33.130Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/serviceAccounts/sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-11-02T08:43:33.131Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/serviceAccounts/sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'sdrwebsitebeta-5aa7d'...
+[info] 
+[info] i  deploying functions 
+[debug] [2025-11-02T08:43:33.138Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.139Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.140Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d [none]
+[debug] [2025-11-02T08:43:33.404Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d 200
+[debug] [2025-11-02T08:43:33.405Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d {"projectNumber":"322748800151","projectId":"sdrwebsitebeta-5aa7d","lifecycleState":"ACTIVE","name":"sdrwebsitebeta","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-11-01T08:04:35.430938Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-11-02T08:43:33.410Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.411Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.413Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.414Z] Checked if tokens are valid: true, expires at: 1762076110980
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-11-02T08:43:33.416Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.416Z] Checked if tokens are valid: true, expires at: 1762076110980
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-11-02T08:43:33.418Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.419Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:33.420Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-11-02T08:43:33.421Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/sdrwebsitebeta-5aa7d
+[debug] [2025-11-02T08:43:33.425Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-11-02T08:43:33.426Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/sdrwebsitebeta-5aa7d
+[debug] [2025-11-02T08:43:33.429Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudbuild.googleapis.com [none]
+[debug] [2025-11-02T08:43:33.429Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudbuild.googleapis.com x-goog-quota-user=projects/sdrwebsitebeta-5aa7d
+[debug] [2025-11-02T08:43:33.432Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/artifactregistry.googleapis.com [none]
+[debug] [2025-11-02T08:43:33.433Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/artifactregistry.googleapis.com x-goog-quota-user=projects/sdrwebsitebeta-5aa7d
+[debug] [2025-11-02T08:43:34.844Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudbuild.googleapis.com 200
+[debug] [2025-11-02T08:43:34.844Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-11-02T08:43:34.847Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudfunctions.googleapis.com 200
+[debug] [2025-11-02T08:43:34.848Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-11-02T08:43:34.856Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/artifactregistry.googleapis.com 200
+[debug] [2025-11-02T08:43:34.857Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-11-02T08:43:34.954Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/runtimeconfig.googleapis.com 200
+[debug] [2025-11-02T08:43:34.955Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-11-02T08:43:34.956Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:34.956Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:34.957Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sdrwebsitebeta-5aa7d/adminSdkConfig [none]
+[debug] [2025-11-02T08:43:35.707Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sdrwebsitebeta-5aa7d/adminSdkConfig 200
+[debug] [2025-11-02T08:43:35.708Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sdrwebsitebeta-5aa7d/adminSdkConfig {"projectId":"sdrwebsitebeta-5aa7d","databaseURL":"https://sdrwebsitebeta-5aa7d-default-rtdb.firebaseio.com","storageBucket":"sdrwebsitebeta-5aa7d.firebasestorage.app"}
+[debug] [2025-11-02T08:43:35.709Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:35.710Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:35.711Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/sdrwebsitebeta-5aa7d/configs [none]
+[debug] [2025-11-02T08:43:36.207Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/sdrwebsitebeta-5aa7d/configs 200
+[debug] [2025-11-02T08:43:36.207Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/sdrwebsitebeta-5aa7d/configs {}
+[debug] [2025-11-02T08:43:36.210Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-11-02T08:43:39.661Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "eslint": "^9.11.1",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true,
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+[debug] [2025-11-02T08:43:39.665Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2025-11-02T08:43:39.668Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-02T08:43:39.689Z] Found firebase-functions binary at 'C:\Users\user\Desktop\sdrwebsite-1.0\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8068
+
+[debug] [2025-11-02T08:43:42.339Z] Got response from /__/functions.yaml {"endpoints":{"sendEmailNotification":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"sendEmailNotification"},"checkAndBlockIP":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"checkAndBlockIP"},"blockIP":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"blockIP"},"unblockIP":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"unblockIP"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[error] [2025-11-02T08:43:42.373Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[error] [2025-11-02T08:43:43.158Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[error] [2025-11-02T08:43:43.471Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[error] [2025-11-02T08:43:45.093Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[error] [2025-11-02T08:43:45.298Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[error] [2025-11-02T08:43:47.195Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[error] [2025-11-02T08:43:49.678Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[error] [2025-11-02T08:43:49.712Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[info] i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[debug] [2025-11-02T08:43:52.400Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:52.400Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:52.401Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/firebaseextensions.googleapis.com [none]
+[debug] [2025-11-02T08:43:52.402Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/firebaseextensions.googleapis.com x-goog-quota-user=projects/sdrwebsitebeta-5aa7d
+[debug] [2025-11-02T08:43:53.829Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/firebaseextensions.googleapis.com 200
+[debug] [2025-11-02T08:43:53.830Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/services/firebaseextensions.googleapis.com [omitted]
+[info] +  extensions: required API firebaseextensions.googleapis.com is enabled 
+[debug] [2025-11-02T08:43:53.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-02T08:43:53.833Z] > authorizing via signed-in user (jw56804272@gmail.com)
+[debug] [2025-11-02T08:43:53.834Z] [iam] checking project sdrwebsitebeta-5aa7d for permissions ["firebase.projects.get","firebaseextensions.instances.list"]
+[debug] [2025-11-02T08:43:53.835Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:53.835Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:53.836Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions [none]
+[debug] [2025-11-02T08:43:53.837Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions x-goog-quota-user=projects/sdrwebsitebeta-5aa7d
+[debug] [2025-11-02T08:43:53.837Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-11-02T08:43:54.165Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions 200
+[debug] [2025-11-02T08:43:54.166Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2025-11-02T08:43:54.167Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:54.168Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:54.169Z] >>> [apiv2][query] GET https://firebaseextensions.googleapis.com/v1beta/projects/sdrwebsitebeta-5aa7d/instances pageSize=100&pageToken=
+[error] [2025-11-02T08:43:54.469Z]  @firebase/database: FIREBASE WARNING: {"code":"app/invalid-credential","message":"Credential implementation provided to initializeApp() via the \"credential\" property failed to fetch a valid Google OAuth2 access token with the following error: \"Error fetching access token: Error while making request: getaddrinfo ENOTFOUND metadata.google.internal. Error code: ENOTFOUND\"."} 
+
+[debug] [2025-11-02T08:43:55.516Z] <<< [apiv2][status] GET https://firebaseextensions.googleapis.com/v1beta/projects/sdrwebsitebeta-5aa7d/instances 200
+[debug] [2025-11-02T08:43:55.516Z] <<< [apiv2][body] GET https://firebaseextensions.googleapis.com/v1beta/projects/sdrwebsitebeta-5aa7d/instances {}
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged C:\Users\user\Desktop\sdrwebsite-1.0\functions (73.38 KB) for uploading 
+[debug] [2025-11-02T08:43:55.612Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:55.612Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:55.613Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/-/functions [none]
+[debug] [2025-11-02T08:43:56.600Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/-/functions 200
+[debug] [2025-11-02T08:43:56.601Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/-/functions {"functions":[{"name":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/checkAndBlockIP","httpsTrigger":{"url":"https://us-central1-sdrwebsitebeta-5aa7d.cloudfunctions.net/checkAndBlockIP","securityLevel":"SECURE_ALWAYS"},"status":"ACTIVE","entryPoint":"checkAndBlockIP","timeout":"60s","availableMemoryMb":256,"serviceAccountEmail":"sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com","updateTime":"2025-11-02T07:53:08.306Z","versionId":"7","labels":{"deployment-tool":"cli-firebase","deployment-callable":"true","firebase-functions-hash":"10042cede00cfa0e23872d03959710cc9e506924"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-171472630179.us-central1.cloudfunctions.appspot.com/e407482c-87a9-4ce3-b5d0-3e9796b35aaa.zip","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"sdrwebsitebeta-5aa7d\",\"databaseURL\":\"https://sdrwebsitebeta-5aa7d-default-rtdb.firebaseio.com\",\"storageBucket\":\"sdrwebsitebeta-5aa7d.firebasestorage.app\"}","GCLOUD_PROJECT":"sdrwebsitebeta-5aa7d","EVENTARC_CLOUD_EVENT_SOURCE":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/checkAndBlockIP"},"runtime":"nodejs20","ingressSettings":"ALLOW_ALL","buildId":"c6df2be7-ddf9-4c86-ac1b-87b28b013f87","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"buildName":"projects/322748800151/locations/us-central1/builds/c6df2be7-ddf9-4c86-ac1b-87b28b013f87","dockerRegistry":"ARTIFACT_REGISTRY","automaticUpdatePolicy":{},"buildServiceAccount":"projects/sdrwebsitebeta-5aa7d/serviceAccounts/322748800151-compute@developer.gserviceaccount.com","satisfiesPzi":true},{"name":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/unblockIP","httpsTrigger":{"url":"https://us-central1-sdrwebsitebeta-5aa7d.cloudfunctions.net/unblockIP","securityLevel":"SECURE_ALWAYS"},"status":"ACTIVE","entryPoint":"unblockIP","timeout":"60s","availableMemoryMb":256,"serviceAccountEmail":"sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com","updateTime":"2025-11-02T07:07:31.600Z","versionId":"6","labels":{"deployment-tool":"cli-firebase","deployment-callable":"true","firebase-functions-hash":"10042cede00cfa0e23872d03959710cc9e506924"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-171472630179.us-central1.cloudfunctions.appspot.com/a389143c-b1ec-4afc-8f8c-c990e1d8f726.zip","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"sdrwebsitebeta-5aa7d\",\"databaseURL\":\"https://sdrwebsitebeta-5aa7d-default-rtdb.firebaseio.com\",\"storageBucket\":\"sdrwebsitebeta-5aa7d.firebasestorage.app\"}","GCLOUD_PROJECT":"sdrwebsitebeta-5aa7d","EVENTARC_CLOUD_EVENT_SOURCE":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/unblockIP"},"runtime":"nodejs20","ingressSettings":"ALLOW_ALL","buildId":"5e07b314-b195-4206-bb86-986e971545c6","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"buildName":"projects/322748800151/locations/us-central1/builds/5e07b314-b195-4206-bb86-986e971545c6","dockerRegistry":"ARTIFACT_REGISTRY","automaticUpdatePolicy":{},"buildServiceAccount":"projects/sdrwebsitebeta-5aa7d/serviceAccounts/322748800151-compute@developer.gserviceaccount.com","satisfiesPzi":true},{"name":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/sendEmailNotification","httpsTrigger":{"url":"https://us-central1-sdrwebsitebeta-5aa7d.cloudfunctions.net/sendEmailNotification","securityLevel":"SECURE_ALWAYS"},"status":"ACTIVE","entryPoint":"sendEmailNotification","timeout":"60s","availableMemoryMb":256,"serviceAccountEmail":"sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com","updateTime":"2025-11-02T07:07:32.855Z","versionId":"6","labels":{"deployment-tool":"cli-firebase","deployment-callable":"true","firebase-functions-hash":"10042cede00cfa0e23872d03959710cc9e506924"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-171472630179.us-central1.cloudfunctions.appspot.com/a389143c-b1ec-4afc-8f8c-c990e1d8f726.zip","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"sdrwebsitebeta-5aa7d\",\"databaseURL\":\"https://sdrwebsitebeta-5aa7d-default-rtdb.firebaseio.com\",\"storageBucket\":\"sdrwebsitebeta-5aa7d.firebasestorage.app\"}","GCLOUD_PROJECT":"sdrwebsitebeta-5aa7d","EVENTARC_CLOUD_EVENT_SOURCE":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/sendEmailNotification"},"runtime":"nodejs20","ingressSettings":"ALLOW_ALL","buildId":"5e07b314-b195-4206-bb86-986e971545c6","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"buildName":"projects/322748800151/locations/us-central1/builds/5e07b314-b195-4206-bb86-986e971545c6","dockerRegistry":"ARTIFACT_REGISTRY","automaticUpdatePolicy":{},"buildServiceAccount":"projects/sdrwebsitebeta-5aa7d/serviceAccounts/322748800151-compute@developer.gserviceaccount.com","satisfiesPzi":true},{"name":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/blockIP","httpsTrigger":{"url":"https://us-central1-sdrwebsitebeta-5aa7d.cloudfunctions.net/blockIP","securityLevel":"SECURE_ALWAYS"},"status":"ACTIVE","entryPoint":"blockIP","timeout":"60s","availableMemoryMb":256,"serviceAccountEmail":"sdrwebsitebeta-5aa7d@appspot.gserviceaccount.com","updateTime":"2025-11-02T07:07:39.882Z","versionId":"6","labels":{"deployment-tool":"cli-firebase","deployment-callable":"true","firebase-functions-hash":"10042cede00cfa0e23872d03959710cc9e506924"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-171472630179.us-central1.cloudfunctions.appspot.com/a389143c-b1ec-4afc-8f8c-c990e1d8f726.zip","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"sdrwebsitebeta-5aa7d\",\"databaseURL\":\"https://sdrwebsitebeta-5aa7d-default-rtdb.firebaseio.com\",\"storageBucket\":\"sdrwebsitebeta-5aa7d.firebasestorage.app\"}","GCLOUD_PROJECT":"sdrwebsitebeta-5aa7d","EVENTARC_CLOUD_EVENT_SOURCE":"projects/sdrwebsitebeta-5aa7d/locations/us-central1/functions/blockIP"},"runtime":"nodejs20","ingressSettings":"ALLOW_ALL","buildId":"5e07b314-b195-4206-bb86-986e971545c6","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"buildName":"projects/322748800151/locations/us-central1/builds/5e07b314-b195-4206-bb86-986e971545c6","dockerRegistry":"ARTIFACT_REGISTRY","automaticUpdatePolicy":{},"buildServiceAccount":"projects/sdrwebsitebeta-5aa7d/serviceAccounts/322748800151-compute@developer.gserviceaccount.com","satisfiesPzi":true}]}
+[debug] [2025-11-02T08:43:56.608Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:56.608Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:56.609Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/sdrwebsitebeta-5aa7d/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-11-02T08:43:57.935Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/sdrwebsitebeta-5aa7d/locations/-/functions 200
+[debug] [2025-11-02T08:43:57.935Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/sdrwebsitebeta-5aa7d/locations/-/functions {}
+[debug] [2025-11-02T08:43:57.942Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:57.943Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:57.944Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d [none]
+[debug] [2025-11-02T08:43:58.208Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d 200
+[debug] [2025-11-02T08:43:58.209Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d {"projectNumber":"322748800151","projectId":"sdrwebsitebeta-5aa7d","lifecycleState":"ACTIVE","name":"sdrwebsitebeta","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-11-01T08:04:35.430938Z"}
+[debug] [2025-11-02T08:43:58.212Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:58.212Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:58.213Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/billingInfo [none]
+[debug] [2025-11-02T08:43:59.459Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/billingInfo 200
+[debug] [2025-11-02T08:43:59.460Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/billingInfo {"name":"projects/sdrwebsitebeta-5aa7d/billingInfo","projectId":"sdrwebsitebeta-5aa7d","billingAccountName":"billingAccounts/019BD4-9E68FE-D743D5","billingEnabled":true}
+[info] i  functions: Skipping the deploy of unchanged functions. 
+[info] +  functions[sendEmailNotification(us-central1)] Skipped (No changes detected) 
+[info] +  functions[checkAndBlockIP(us-central1)] Skipped (No changes detected) 
+[info] +  functions[blockIP(us-central1)] Skipped (No changes detected) 
+[info] +  functions[unblockIP(us-central1)] Skipped (No changes detected) 
+[debug] [2025-11-02T08:43:59.470Z] Total Function Deployment time: 3
+[debug] [2025-11-02T08:43:59.471Z] 0 Functions Deployed
+[debug] [2025-11-02T08:43:59.471Z] 0 Functions Errored
+[debug] [2025-11-02T08:43:59.472Z] 0 Function Deployments Aborted
+[debug] [2025-11-02T08:43:59.472Z] Average Function Deployment time: NaN
+[info] i  functions: cleaning up build files... 
+[debug] [2025-11-02T08:43:59.474Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.475Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.476Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.477Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.477Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.478Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.479Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.479Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.481Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.481Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:43:59.482Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/send_email_notification [none]
+[debug] [2025-11-02T08:43:59.484Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/check_and_block_i_p [none]
+[debug] [2025-11-02T08:43:59.486Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/block_i_p [none]
+[debug] [2025-11-02T08:43:59.489Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/unblock_i_p [none]
+[debug] [2025-11-02T08:43:59.490Z] >>> [apiv2][query] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list [none]
+[debug] [2025-11-02T08:43:59.953Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/block_i_p 404
+[debug] [2025-11-02T08:43:59.954Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/block_i_p {"error":{"code":404,"message":"Package \"projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/block_i_p\" was not found.","status":"NOT_FOUND"}}
+[debug] [2025-11-02T08:44:00.113Z] <<< [apiv2][status] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list 404
+[debug] [2025-11-02T08:44:00.114Z] <<< [apiv2][body] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2025-11-02T08:44:00.114Z] Failed docker command with error  Request to https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[debug] [2025-11-02T08:44:00.117Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:44:00.118Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:44:00.118Z] >>> [apiv2][query] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list [none]
+[debug] [2025-11-02T08:44:00.544Z] <<< [apiv2][status] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list 404
+[debug] [2025-11-02T08:44:00.545Z] <<< [apiv2][body] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list {"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}]}
+[debug] [2025-11-02T08:44:00.545Z] Failed docker command with error  Request to https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list had HTTP Error: 404, Not Found {"name":"FirebaseError","children":[],"context":{"body":{"errors":[{"code":"NAME_UNKNOWN","message":"Repository \"us.gcr.io\" not found"}],"error":{"message":"Not Found"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list had HTTP Error: 404, Not Found","status":404}
+[debug] [2025-11-02T08:44:00.641Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/check_and_block_i_p 404
+[debug] [2025-11-02T08:44:00.641Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/check_and_block_i_p {"error":{"code":404,"message":"Package \"projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/check_and_block_i_p\" was not found.","status":"NOT_FOUND"}}
+[debug] [2025-11-02T08:44:00.650Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:44:00.650Z] Checked if tokens are valid: true, expires at: 1762076110980
+[debug] [2025-11-02T08:44:00.651Z] >>> [apiv2][query] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list [none]
+[debug] [2025-11-02T08:44:00.658Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/send_email_notification 404
+[debug] [2025-11-02T08:44:00.659Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/send_email_notification {"error":{"code":404,"message":"Package \"projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/send_email_notification\" was not found.","status":"NOT_FOUND"}}
+[debug] [2025-11-02T08:44:00.692Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/unblock_i_p 404
+[debug] [2025-11-02T08:44:00.693Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1/projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/unblock_i_p {"error":{"code":404,"message":"Package \"projects/sdrwebsitebeta-5aa7d/locations/us-central1/repositories/gcf-artifacts/packages/unblock_i_p\" was not found.","status":"NOT_FOUND"}}
+[debug] [2025-11-02T08:44:01.124Z] <<< [apiv2][status] GET https://us.gcr.io/v2/sdrwebsitebeta-5aa7d/gcf/us-central1/tags/list 404
