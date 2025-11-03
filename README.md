@@ -31,7 +31,13 @@ cd functions
 
 npm install
 
-# 5) 첨부한 firebase설정방법.word 파일에 따라 firebase 설정 및 배포
+
+# 5) guideline 폴더안에 있는 "firebase 설정-1.0.word" 에 따라 firebase설정
+초기 설정이 매우 방대하니 천천히 따라가주시길 바랍니다.
+
+
+# 6) guideline 폴더안에 있는"website guideline-1.0.word" 에 따라 웹사이트 운영
+이 또한 굉장히 내용이 방대하니 꼭 주의하시길 바랍니다.
 
 
 
