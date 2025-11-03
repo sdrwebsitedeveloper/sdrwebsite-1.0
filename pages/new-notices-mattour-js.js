@@ -71,7 +71,7 @@ function setupEventListeners() {
         });
 
         alert('공지사항이 성공적으로 업로드되었습니다.');
-        window.location.hash = 'notices-mattour'; // SPA 방식으로 이동
+        window.location.hash = 'noticesmattour'; // SPA 방식으로 이동
     });
 }
 
