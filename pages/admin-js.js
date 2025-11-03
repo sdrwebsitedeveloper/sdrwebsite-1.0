@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebas
 import { getDatabase, ref, onValue, remove } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-functions.js";
 
-import { firebaseConfig } from "../firebase.js";
+import { firebaseConfig } from "../firebase-config.js";
 
 // Firebase 초기화
 const app = initializeApp(firebaseConfig); // firebase.initializeApp() 대신 initializeApp() 사용

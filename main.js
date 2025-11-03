@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/fireba
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 import { handleRouteChange } from './router.js'; // 라우터 모듈 불러오기
-import { firebaseConfig } from "../firebase.js";
+import { firebaseConfig } from "../firebase-config.js";
 
 
 

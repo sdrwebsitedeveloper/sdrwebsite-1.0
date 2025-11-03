@@ -4,7 +4,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/fireba
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 import { getDatabase, ref, onValue, child, get } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
 
-import { firebaseConfig } from "../firebase.js";
+import { firebaseConfig } from "../firebase-config.js";
 
 // Firebase 초기화
 const app = initializeApp(firebaseConfig);
