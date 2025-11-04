@@ -5,7 +5,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import { getDatabase, ref, push, set, onValue, update, remove } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
 import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-functions.js";
 
-import { firebaseConfig } from "../firebase-config.js";
+import { firebaseConfig } from "../firebase.js";
 
 export function renderfaqdetails() {
     // HTML 콘텐츠 렌더링
@@ -180,6 +180,8 @@ export function addfaqdetailsStyles() {
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            white-space: pre-wrap;
+            text-align: left;
         }
         .content h1{
             border-bottom: 2px solid #000; 

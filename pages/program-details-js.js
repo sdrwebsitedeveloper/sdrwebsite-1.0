@@ -4,7 +4,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/fireba
 import { getFirestore, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 import { getStorage, ref, deleteObject } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
-import { firebaseConfig } from "../firebase-config.js";
+import { firebaseConfig } from "../firebase.js";
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -218,6 +218,8 @@ export function addprogramdetailsStyles() {
         }
 
         .program-description {
+            white-space: pre-wrap;
+            text-align: left;
             margin-top: 20px;
         }
 

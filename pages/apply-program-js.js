@@ -4,7 +4,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/fireba
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
-import { firebaseConfig } from "../firebase-config.js";
+import { firebaseConfig } from "../firebase.js";
 
 // Firebase 앱 초기화
 const app = initializeApp(firebaseConfig);
@@ -119,6 +119,8 @@ export function addapplyProgramsStyles() {
             margin-bottom: 10px;
         }
         .program-description {
+            white-space: pre-wrap;
+            text-align: left;
             font-size: 20px;
             color: #333;
         }
